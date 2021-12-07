@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTreeColorHighlighter">
+    <files>
+      <node color="3" path="$PROJECT_DIR$/grand_note" />
+      <node color="3" path="$PROJECT_DIR$/grand_note/__init__.py" />
+      <node color="3" path="$PROJECT_DIR$/grand_note/asgi.py" />
+      <node color="3" path="$PROJECT_DIR$/grand_note/settings.py" />
+      <node color="3" path="$PROJECT_DIR$/grand_note/urls.py" />
+      <node color="3" path="$PROJECT_DIR$/grand_note/wsgi.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app" />
+      <node color="5" path="$PROJECT_DIR$/note_app/__init__.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app/admin.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app/apps.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app/migrations" />
+      <node color="5" path="$PROJECT_DIR$/note_app/models.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app/tests.py" />
+      <node color="5" path="$PROJECT_DIR$/note_app/views.py" />
+      <node color="6" path="$PROJECT_DIR$/templates" />
+    </files>
+    <colors>
+      <color id="1" value="#4f060d" name="Color 1" enabled="true" />
+      <color id="2" value="#44220e" name="Color 2" enabled="true" />
+      <color id="3" value="#3f371b" name="Color 3" enabled="true" />
+      <color id="4" value="#162c16" name="Color 4" enabled="true" />
+      <color id="5" value="#0f2f47" name="Color 5" enabled="true" />
+      <color id="6" value="#171a34" name="Color 6" enabled="true" />
+      <color id="7" value="#311333" name="Color 7" enabled="true" />
+      <color id="8" value="#1e1e1e" name="Color 8" enabled="true" />
+    </colors>
+    <option name="marksForCollapsedHighlights" value="Dots" />
+  </component>
+</project>

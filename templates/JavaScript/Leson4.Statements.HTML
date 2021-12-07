@@ -1,0 +1,139 @@
+<!-- 
+JavaScript Statements
+    JavaScript statements are composed of:
+    - Values
+    - Operators
+    - Expressions
+    - Keywords
+    - Comments 
+In HTML, JavaScript statements are executed by the browser.
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+<!-- JavaScript Programs -->
+    <!-- A computer program is a list of "instructions" to be "executed" by a computer. In a programming language, these 
+        programming instructions are called statements. A JavaScript program is a list of programming statements. -->
+    <h2>JavaScript Statements</h2>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    
+    let x, y, z; <br>
+    x = 5; <br>
+    y = 6; <br>       
+    z = x + y; <br>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        // Semicolons ; separate JavaScript statements.
+    let x, y, z;  // Statement 1 Declare 3 variables
+    x = 5;        // Statement 2 Assign the value 5 to x
+    y = 6;        // Statement 3 Assign the value 6 to y
+    z = x + y;    // Statement 4 Assign the sum of x and y to z
+    // allowed: a = 5; b = 6; c = a + b;
+
+    let message1 = "Semicolons ; separate JavaScript statements.";
+    let message2 = "JavaScript ignores multiple spaces but it's good practice to use it around Operators";
+    let message3 = 
+    "For best readability, programmers often like to avoid code lines longer than 80 characters. If a JavaScript statement does " +
+    "not fit on one line, the best place to break it is after an operator";
+
+    document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+    document.getElementById("demo2").innerHTML = message1
+    document.getElementById("demo3").innerHTML = message2
+    document.getElementById("demo4").innerHTML = message3
+    
+    </script>
+    <hr>
+
+
+
+<!-- JavaScript Code Blocks -->
+
+    <h2>JavaScript Statements</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+    function myFunction() {
+    document.getElementById("demo5").innerHTML = "Hello Dolly!";
+    document.getElementById("demo6").innerHTML = "How are you?";
+    }
+    </script>
+
+<!-- JavaScript Keywords -->
+<!-- JavaScript Code Blocks -->
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+function myFunction() {
+document.getElementById("demo5").innerHTML = "Hello Dolly!";
+document.getElementById("demo6").innerHTML = "How are you?";
+}
+</script>
+<hr>
+
+<!-- JavaScript Keywords -->
+<table border="solid 40px" border-collapse=collapse >
+    <tr>
+        <td class="notranslate">var</td>
+        <td>Declares a variable</td>
+    </tr>
+    <tr>
+        <td class="notranslate">let</td>
+        <td>Declares a block variable</td>
+    </tr>
+    <tr>
+        <td class="notranslate">const</td>
+        <td>Declares a block constant</td>
+    </tr>
+    <tr>
+        <td class="notranslate">if</td>
+        <td>Marks a block of statements to be executed on a condition</td>
+    </tr>
+    <tr>
+        <td class="notranslate">switch</td>
+        <td>Marks a block of statements to be executed in different cases</td>
+    </tr>
+    <tr>
+        <td class="notranslate">for</td>
+        <td>Marks a block of statements to be executed in a loop</td>
+    </tr>
+    <tr>
+        <td class="notranslate">function</td>
+        <td>Declares a function</td>
+    </tr>
+    <tr>
+        <td class="notranslate">return</td>
+        <td>Exits a function</td>
+    </tr>
+    <tr>
+        <td class="notranslate">try</td>
+        <td>Implements error handling to a block of statements</td>
+    </tr>
+    </table>
+
+    <div class="w3-panel w3-note">
+    <p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.</p>
+    </div>
+</table>    
+
+</body>
+
+</html>

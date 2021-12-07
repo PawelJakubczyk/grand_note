@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4fb6391acf.js" crossorigin="anonymous"></script>
+    <script src="jq.js" crossorigin="anonymous"></script>
+
+<script>
+
+</script>
+
+
+    <!-- <script src="jquery-3.5.1.min.js"></script>    You can download it -->
+<style>
+    body {
+    background-color: silver;
+}
+    pre, h1, h2, h3, h4 {
+        margin-left: 16px;
+    }
+
+    .codeTextDark {
+        background-color: rgb(56, 49, 43);
+        color: rgb(255, 255, 255);
+        margin: 12px
+    }
+    .codeTextLight {
+        background-color: rgb(87, 79, 72);
+        color: rgba(0, 0, 0, 0.973);
+        margin: 12px
+    }
+    
+</style>
+
+
+</head>
+<body>
+
+<h2>Syntax</h2>
+
+
+<section id='selectorsView' class='codeTextDark'>
+
+    <pre>
+    <h2>Selectors</h2>
+    <b>Syntax: $(selector).action()</b>
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+    
+
+
+    <a style='color: coral;' href="https://www.w3schools.com/jquery/trysel.asp">JQ selectors test</a>
+
+    &lt;head>
+        &lt;script>
+            $(document).ready(function(){   // provaid from execute before document is redy
+                
+                $('p');                     // hide all p element
+                $('#test');                 // hide element with id test<button id='buttonSelector2', style='background-color: rgb(56, 49, 43)'><i class="fas fa-caret-down"></i></button><div id=div2 style="width:fit-content;height:fit-content;display:none;">
+                
+                
+                
+                
+                </div>
+                $('.test');                 // hide element with class test
+                $('*');                     // hide all element
+                $('[href]');                // hide all href (hiperklink) atribiute
+                $(this);                    // hide the current HTML element
+                $("p:first")                // hide the first &lt;p> element	
+                $("ul li:first")            // hide the first &lt;li> element of the first &lt;ul>
+                $("tr:even")                // Selects all even &lt;tr> elements	
+                $("tr:odd")                 // Selects all odd &lt;tr> elements
+                $("a[target!='_blank']")    // Selects all &lt;a> elements with a target attribute value NOT equal to "_blank"
+                $("*")                      //Selects all elements	
+                $(this)                     //Selects the current HTML element	
+                $("p.intro")                //Selects all &lt;p> elements with class="intro"	
+                $("p:first")                //Selects the first &lt;p> element	
+                $("ul li:first")            //Selects the first &lt;li> element of the first &lt;ul>	
+                $("ul li:first-child")      //Selects the first &lt;li> element of every &lt;ul>	
+                $("[href]")                 //Selects all elements with an href attribute	
+                $("a[target='_blank']")     //Selects all &lt;a> elements with a target attribute value equal to "_blank"	
+                $("a[target!='_blank']")    //Selects all &lt;a> elements with a target attribute value NOT equal to "_blank"	
+                $(":button")                //Selects all &lt;button> elements and &lt;input> elements of type="button"	
+                $("tr:even")                //Selects all even &lt;tr> elements	
+                $("tr:odd")                 //Selects all odd &lt;tr> elements
+
+            });
+        &lt;/script>
+    &lt;/head>
+    </pre>
+</section>
+
+<!-- Events -->
+<section id=eventsView class='codeTextLight'>
+<h2>Events</h2>
+<pre>
+<b>Syntax: $(selector).event(function()action())</b>
+
+<b>Mouse Events</b>
+click                               user clicks on the HTML element
+dblclick                            user double-clicks on the HTML element
+mouseenter                          mouse pointer enters the HTML element
+mouseleave                          mouse pointer leaves the HTML element
+mousedown                           the left, middle or right mouse button is pressed down the HTML element
+mouseup                             the left, middle or right mouse button is released the HTML element
+hover                               The first function is executed when the mouse enters the HTML element
+                                    and the second function is executed when the mouse leaves the HTML element
+
+on                                  Attach multiple event handlers
+<b>Keyboard Events</b>
+keypress
+keydown
+keyup
+<b>Form Events</b>
+submit
+change
+focus                               executed when the form field gets focus
+blur                                executed when the form field loses focus
+<b>Document/Window Events</b>
+load
+resize
+scroll
+unload
+
+&lt;script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
+&lt;/script>
+</pre>
+</section>
+
+</body>
+</html>

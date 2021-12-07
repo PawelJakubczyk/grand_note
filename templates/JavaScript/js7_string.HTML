@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+    background-color: silver;
+}
+    pre, h1, h2, h3, h4 {
+        margin-left: 16px;
+    }
+
+    .codeTextDark {
+        background-color: rgb(56, 49, 43);
+        color: rgb(255, 255, 255);
+        margin: 12px
+    }
+    .codeTextLight {
+        background-color: rgb(87, 79, 72);
+        color: rgba(0, 0, 0, 0.973);
+        margin: 12px
+    }
+</style>
+</head>
+
+<body>
+
+
+<section id='infoOfString' class="codeTextDark">
+<h2>Propertys</h2>
+<!-- get string lenght property -->
+<h4>Length property</h4>
+<pre>
+    The length property returns the length of a string
+
+    let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = txt.length;
+
+</pre></section>
+<!-- extracting part of string -->
+<section id='extractingPartOfString' class="codeTextLight">
+<h2>Extract String</h2>
+<h4>The slice() Method</h4>
+<pre>
+    slice() extracts a part of a string and returns the extracted part in a new string.
+    The method takes 2 parameters: the start position, and the end position (end not included).
+    This example slices out a portion of a string from position 7 to position 12 (13-1):
+</pre>
+<pre>
+    let str = "Apple, Banana, Kiwi";
+    let part = str.slice(7, 13);
+
+    let str = "Apple, Banana, Kiwi";
+    let part = str.slice(-12, -6);
+
+    let part = str.slice(7);
+
+    let part = str.slice(-12);
+</pre>
+
+<h4>The substring() Method</h4>
+<pre>
+    substring() is similar to slice().
+    The difference is that substring() cannot accept negative indexes.
+</pre>
+<pre>
+    let str = "Apple, Banana, Kiwi";
+    let part = substring(7, 13);
+</pre>
+<h4>TThe substr() Method</h4>
+<pre>
+    The difference is that the second parameter specifies the length of the extracted part.
+</pre>
+<pre>
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(7, 6);
+
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(7);
+
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(-4);
+
+</pre></section>
+
+<!-- Upper and Lower Case -->
+<section id='upperAndLowerCase' class="codeTextDark">
+<h2>Uper and lower case</h2>
+<h4>toUpperCase() method</h4>
+<pre>    A string is converted to upper case with toUpperCase()</pre>
+<pre>
+    let text1 = "Hello World!";
+    let text2 = text1.toUpperCase();
+</pre>
+<h4>toLowerCase() method</h4>
+<pre>    A string is converted to lower case with toLowerCase()</pre>
+<pre>
+    let text1 = "Hello World!";
+    let text2 = text1.toLowerCase();
+
+</pre></section>
+
+<!-- String Operations -->
+<Section id='stringOperations' class="codeTextLight">
+<h2>String Operations</h2>
+<h4>concat() Method</h4>
+<pre>concat() joins two or more strings:
+
+    let text1 = "Hello";
+    let text2 = "World";
+    let text3 = text1.concat(" ", text2);
+
+    text = "Hello" + " " + "World!";
+    text = "Hello".concat(" ", "World!");
+    
+</pre></Section>
+
+<!-- Text Clearing -->
+<Section id='textClearing ' class="codeTextDark">
+<h2>Text Clearing</h2>
+<h4>trim() method</h4>
+<pre>The trim() method removes whitespace from both sides of a string:
+
+    let text = "      Hello World!      ";
+    let text.trim()    // Returns "Hello World!"
+
+</pre></Section>
+<!-- Padding -->
+<Section id='pading ' class="codeTextLight">
+<h2>Pading</h2>
+<h4>padStart(lenght, symbol)</h4>
+<pre>padStart support padding at the beginning of a string.
+
+    let text = "5";
+    let padded = text.padStart(4,0);
+</pre>
+<h4>padEnd(lenght, symbol)</h4>
+    <pre>padEnd support padding at the end of a string.
+    
+    let text = "5";
+    let padded = text.padEnd(4,0);
+
+</pre></Section>
+
+
+
+
+
+
+</body>
+</html>
+

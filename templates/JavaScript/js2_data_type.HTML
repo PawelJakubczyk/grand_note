@@ -1,0 +1,144 @@
+{% extends 'schema.html'%}
+{% block tile %} homepage {% endblock title %}
+
+{% extends 'schema2.html'%}
+{% block site2 %}{% endblock site2 %}
+
+{% block site %}
+
+
+<!-- Data Type List -->
+<section id=dataType class='codeTextDark' style="width:99.8%;">
+
+<h2>Data Types</h2>
+
+<ul>
+<li><h3>Primitive Types</h3></li>
+    <ul>
+        <li><pre>String     	represents textual data	                               'hello', "hello world!" etc</pre></li>
+        <li><pre>Number     	an integer or a floating-point number	                3, 3.234, 3e-2 etc.</pre></li>
+        <li><pre>BigInt     	an integer with arbitrary precision                     900719925124740999n , 1n etc.</pre></li>
+        <li><pre>Boolean    	Any of two values: true or false                        true and false</pre></li>
+        <li><pre>undefined  	a data type whose variable is not initialized	        let a;</pre></li>
+        <li><pre>null          	denotes a null value	                                let a = null;</pre></li>
+        <li><pre>Symbol      	data type whose instances are unique and immutable      let value = Symbol('hello');</pre></li>
+        <li><pre>Object     	key-value pairs of collection of data	                let student = { };</pre></li>
+    </ul>
+<li><h3>Non-primitive type</h3></li>
+    <ul>
+        <li><pre>o o</pre></li>
+    </ul>
+</ul> 
+
+</section>
+
+
+<table style="width:100%">
+    <tr>
+<!-- String Type -->
+    <td id=stringTypes class='codeTextLight'>
+
+    <h2>String</h2>
+    <h3>string methods and propertys</h3>
+    Lenght
+    <p id=strLenght></p>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("strLenght").innerHTML = text.length;
+    </script>
+    
+    
+    specjal symbols:
+    <pre>   Code	        Result	        Description</pre>
+        <ul>
+            <li><pre>\'	    '	        Single quote</pre></li>
+            <li><pre>\"	    "	        Double quote</pre></li>
+            <li><pre>\\	    \	        Backslash</pre></li>
+            <li><pre>\b	                Backspace</pre></li>
+            <li><pre>\f	                Form Feed</pre></li>
+            <li><pre>\n	                New Line</pre></li>
+            <li><pre>\r	                Carriage Return</pre></li>
+            <li><pre>\t	                Horizontal Tabulator</pre></li>
+            <li><pre>\v	                Vertical Tabulator</pre></li>
+        </ul><br>
+<!-- End String Type -->        
+    </td>
+<!-- Number Type -->
+    <td id=numberTypes class='codeTextDark'>
+    <h2>Number</h2>
+    
+    <h3>number note</h3>
+    <pre>   note	            	        Description</pre>
+        <ul>
+            <li><pre>4	    	        integer note</pre></li>
+            <li><pre>5.3	 	        float note</pre></li>
+            <li><pre>1.22e10	    	Science  note</pre></li>
+            <li><pre>0xff	            Hexadecimal note </pre></li>
+            <li><pre>Infinity	        special number </pre></li>
+            <li><pre>-Infinity	        special number </pre></li>
+            <li><pre>NaN	            unknown number type number</pre></li>
+        </ul><br>
+    
+    <h3>special number value</h3>    
+        <p>Max num:</p>
+            1.7976931348623157e+308
+            ever higher recharge to Infinity 
+        <p>Min num:</p>
+          - 1.7976931348623157e+308
+            ever lower recharge to -Infinity
+        <p>Possible nearest 0 num</p>
+            5e-324
+            ever nearest recharge to 0
+    <h3>caution</h3>
+        All method from number should be write after () or with double ..
+        (5).method
+        5..method
+<!-- End Number Type -->
+    </td>
+    </tr>
+
+    <tr>
+<!-- Boolean Type -->
+    <td id=boolType class='codeTextDark' rowspan="2">
+        <h2>Boolean</h2>
+        <h4>Boolean Values:</h4>
+        <li>true</li>
+        <li>false</li>
+        <h4>Always false:</h4>
+            <li>0</li>
+            <li>-0</li>
+            <li>''</li>
+            <li>""</li>
+            <li>``</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>NaN</li>
+            <li>Nan === NaN</li>
+        <h4>Condition Instructions</h4>
+        <p>x ? y : v</p>
+        <p>x - condition</p>
+        <p>y - code if true</p>
+        <p>v - code if false</p>
+
+<!-- End Boolean Type -->
+    </td>
+<!-- Undefined Type -->    
+    <td id=undefinedTypes class='codeTextLight'>
+        <h2>Undefined</h2>
+    <p>let someVariable;</p>
+    <p>someVariable</p>
+    <p>>>> undefined</p>
+    </td>
+    </tr>
+
+<tr>
+    <td id=undefinedTypes class='codeTextLight'>
+    <h2>Null</h2>
+    <p>let someVariable = {};</p>
+    <p>someVariable</p>
+    <p>>>> null</p>
+    </td>
+</tr>
+</table>
+
+{% endblock site %}

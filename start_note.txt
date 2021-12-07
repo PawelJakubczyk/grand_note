@@ -1,0 +1,9 @@
+Fast Start
+
+cd 'E:\Pr HTML + CSS\grand_note'
+
+source note_venv/Scripts/activate
+
+python manage.py runserver
+
+http://localhost:8000

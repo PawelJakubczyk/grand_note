@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- JavaScript in <head> -->
+
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+        </script>
+
+    </head>    
+
+    <body>
+ 
+        <h2>Demo JavaScript in Head</h2>
+        <p id="demo">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+    <hr>
+
+<!-- JavaScript in <body> -->
+
+    <h2>Demo JavaScript in Body</h2>
+    <p id="demo2">A Paragraph.</p>
+    
+    <button type="button" onclick="myFunction2()">Try it</button>
+    <script>
+        function myFunction2() {
+            document.getElementById("demo2").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <hr>
+
+<!-- External JavaScript -->
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo3">A Paragraph.</p>
+    <button type="button" onclick="myFunction3()">Try it</button>
+    <p>This example links to "JS1.js".</p>
+    <p>(myFunction is stored in "JS1.js")</p>
+
+    <script src="myScript1.js"></script>
+    <!-- Other type of js link -->
+    <script src="https://kit.fontawesome.com/4fb6391acf.js" crossorigin="anonymous"></script> -->
+    <script src="/js/myScript.js"></script>
+
+</body>
+
+</html>

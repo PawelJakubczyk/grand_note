@@ -1,0 +1,13 @@
+{% extends 'schema.html'%}
+{% block tile %} homepage {% endblock %}
+{% block site %}
+<div align="center">
+    <h2>Index</h2>
+    {% for jq_notes, jq_link in jq_zip %}
+        <a type="button" class="w-50 btn btn-outline-success btn-block" role="button"
+           href='/{{ jq_link }}'>{{ jq_notes }}</a>
+    {% endfor %}
+</div>
+{% endblock site %}
+
+href="/1/{{ client.place }}"

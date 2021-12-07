@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+    background-color: silver;
+}
+    .codeText {
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+</style>
+</head>
+
+<body>
+<!-- Simple Variables -->
+<h2>Simple Variables</h2>
+
+<section id='Simple Variables' class="codeText">
+<pre>
+&lt;h2>Simple Variables&lt;/h2>    
+&lt;p id='firstNum'>d&lt;/p>
+&lt;p id='secondNum'>d&lt;/p>
+&lt;p id='buttonIsPush'>d&lt;/p>
+&lt;p id='buttonIsNotPush'>d&lt;/p>
+</pre>
+<pre>
+&lt;script>
+    const exaplesNum = 5;
+    const exaplesNum2 = 8*7;
+    let examlesStr
+    examlesStr = 'Button Is Push'+'&lt;br>'+'wow';
+    examlesStr2 = 'Button Is Not Push';
+    
+    document.getElementById('firstNum').innerHTML = exaplesNum**3;
+    document.getElementById('secondNum').innerHTML = exaplesNum2;
+    document.getElementById('buttonIsPush').innerHTML = examlesStr;
+    document.getElementById('buttonIsNotPush').innerHTML = examlesStr2 + '&lt;br>' + 'pity';
+&lt;/script>
+</pre></section>
+
+<p id='firstNum'>d</p>
+<p id='secondNum'>d</p>
+<p id='buttonIsPush'>d</p>
+<p id='buttonIsNotPush'>d</p>
+
+<script>
+const exaplesNum = 5;
+const exaplesNum2 = 8*7;
+let examlesStr
+examlesStr = 'Button Is Push'+'<br>'+'wow';
+examlesStr2 = 'Button Is Not Push';
+examlesStr3 = 'This string is so damn \
+                long'; // how to break str without operator
+
+document.getElementById('firstNum').innerHTML = exaplesNum**3;
+document.getElementById('secondNum').innerHTML = exaplesNum2;
+document.getElementById('buttonIsPush').innerHTML = examlesStr;
+document.getElementById('buttonIsNotPush').innerHTML = examlesStr2 + '<br>' + 'pity';
+</script>
+
+<!-- Object -->
+<h2>Object</h2>
+<section id='Simple Variables' class="codeText">
+<pre>
+&lt;h4>call objectt promerty&lt;/h4>
+&lt;p id='personFirstName'>d&lt;/p>
+&lt;p id='personLastName'>&lt;/p>
+&lt;p id='personId'>&lt;/p>
+&lt;h4>call objectt function&lt;/h4>
+&lt;p id='personFullName'>&lt;/p>
+</pre>
+
+
+<pre>&lt;script>
+    const person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+    document.getElementById('personFirstName').innerHTML = person.firstName;
+    document.getElementById('personLastName').innerHTML = person.lastName;
+    document.getElementById('personId').innerHTML = person.id;
+    document.getElementById('personFullName').innerHTML = person.fullName();
+&lt;/script></pre>
+</section>
+
+
+<h4>call objectt promerty</h4>
+<p id='personFirstName'>d</p>
+<p id='personLastName'></p>
+<p id='personId'></p>
+<h4>call objectt function</h4>
+<p id='personFullName'></p>
+
+<script>
+    // Creating object
+    const person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        // Creating function in object
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+    document.getElementById('personFirstName').innerHTML = person.firstName;
+    document.getElementById('personLastName').innerHTML = person.lastName;
+    document.getElementById('personId').innerHTML = person.id;
+    document.getElementById('personFullName').innerHTML = person.fullName();
+</script>
+
+
+</body>
+</html>
+

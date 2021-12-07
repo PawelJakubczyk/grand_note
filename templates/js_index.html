@@ -1,0 +1,11 @@
+{% extends 'schema.html'%}
+{% block tile %} homepage {% endblock %}
+{% block site %}
+<div align="center">
+    <h2>Index</h2>
+    {% for js_notes, js_link in js_zip %}
+        <a type="button" class="w-50 btn btn-outline-success btn-block" role="button"
+           href='/js/{{ js_link }}'>{{ js_notes }}</a>
+    {% endfor %}
+</div>
+{% endblock site %}
