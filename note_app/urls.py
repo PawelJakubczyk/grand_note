@@ -12,6 +12,7 @@ for js_path in views.js_section_link_and_render_list:
     urlpatterns.append(path('js/' + js_path[0] + '/', js_path[1]))
 
 
+urlpatterns.append(path('js/js2-data-type/', views.javascript_section))
 # for element in os.listdir('templates/JQery'):
 #     urlpatterns.append(path('jq/' + element, index_renderer(renderer_path='JQery', render_element=element), name=element[4:-5]))
 #

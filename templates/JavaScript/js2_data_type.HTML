@@ -1,15 +1,26 @@
-{% extends 'schema.html'%}
-{% block tile %} homepage {% endblock title %}
-
-{% extends 'schema2.html'%}
-{% block site2 %}{% endblock site2 %}
-
-{% block site %}
+{% extends 'schema2.html' %}
+{% block tile %} JS Data Type {% endblock tile %}
 
 
+{% block tree_name %}
+<a class="active" href="#home">Java Script</a>
+{% endblock tree_name %}
+
+{% block tree_content %}
+    {% for js_notes, js_link in js_zip %}
+        {% if 'js2-data-type' == js_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'> {{ js_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'>{{ js_notes }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock tree_content %}
+
+{% block content %}
 <!-- Data Type List -->
-<section id=dataType class='codeTextDark' style="width:99.8%;">
-
+<section id=dataType class='codeTextDark' style="width:84%;">
 <h2>Data Types</h2>
 
 <ul>
@@ -33,7 +44,7 @@
 </section>
 
 
-<table style="width:100%">
+<table style="width:84%">
     <tr>
 <!-- String Type -->
     <td id=stringTypes class='codeTextLight'>
@@ -141,4 +152,4 @@
 </tr>
 </table>
 
-{% endblock site %}
+{% endblock content %}
