@@ -23,7 +23,7 @@
   width: 200px;
   background-color: #f1f1f1;
   position: fixed;
-  height: 80%;
+  height: 100%;
   overflow: auto;
 }
 
@@ -72,12 +72,6 @@ div.content {
 
 <body>
 <!--Head Bar-->
-
-<!--  <header class="relative-top p-2 bg-dark text-white" style="position: fixed; width:100%">-->
-<!--      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">-->
-<!--        <a href='{% url "homepage"%}' class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">-->
-<!--          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>-->
-
 <header class="relative-top p-2 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -122,7 +116,7 @@ div.content {
 
     <!--Left Side Bar-->
 
-  <div class="sidebar relative-down p-2 bg-dark text-white" style="position: fixed">
+  <div class="sidebar relative-up p-2 bg-dark text-white" style="position: fixed; display: flex; flex-direction: column;">
     {% block tree_name %} {% endblock tree_name %}
     {% block tree_content %} {% endblock tree_content %}
   </div>

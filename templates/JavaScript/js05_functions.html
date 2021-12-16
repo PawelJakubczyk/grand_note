@@ -1,0 +1,37 @@
+{% extends 'schema2.html'%}
+
+{% block tile %} 
+	js_
+{% endblock %}
+
+{% block tree_name %}
+	<a class="active" href="/js/">Java Script</a>
+{% endblock tree_name %}
+
+{% block tree_content %}
+    {% for js_notes, js_link in js_zip %}
+        {% if 'js05-functions' == js_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'> {{ js_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'>{{ js_notes }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock tree_content %}
+
+{% block content %}
+	<main>
+        &lt;script>
+            function myFunction(p1, p2) {
+                return p1 * p2;
+            }
+        &lt;/script>
+
+        <script>
+            function myFunction(p1, p2) {
+              return p1 * p2;
+            }
+        </script>
+    </main>
+{% endblock content %}

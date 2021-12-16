@@ -1,0 +1,38 @@
+{% extends 'schema2.html'%}
+
+{% block tile %} 
+	js_
+{% endblock %}
+
+{% block tree_name %}
+	<a class="active" href="/js/">Java Script</a>
+{% endblock tree_name %}
+
+{% block tree_content %}
+    {% for js_notes, js_link in js_zip %}
+        {% if 'js07-events' == js_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'> {{ js_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark"
+               style="font-size: x-small; height: 1px;" href='/js/{{ js_link }}'>{{ js_notes }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock tree_content %}
+
+{% block content %}
+	<main>
+        <!-- <element event='some JavaScript'></element> -->
+        <!-- <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button> -->
+        <!-- <button onclick="this.innerHTML = Date()">The time is?</button> -->
+
+        <pre>
+            onchange	        An HTML element has been changed
+            onclick	        The user clicks an HTML element
+            onmouseover	        The user moves the mouse over an HTML element
+            onmouseout	        The user moves the mouse away from an HTML element
+            onkeydown	        The user pushes a keyboard key
+            onload	        The browser has finished loading the page
+        </pre>
+    </main>
+{% endblock content %}
