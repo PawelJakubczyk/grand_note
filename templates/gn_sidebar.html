@@ -1,0 +1,15 @@
+<div class="row bg-success" style="height:100%;">
+<div>
+<div class="container-fluid p-1 btn-group-vertical" role="group" aria-label="Vertical button group">
+    {% for notes, link in zip %}
+        {% if name == link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled btn-block"
+               style="font-size: x-small; height: 25px;"> {{ notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark btn-block"
+               style="font-size: x-small; height: 25px;" href='/bs/{{ bs_link }}'>{{ notes }}</a>
+        {% endif %}
+    {% endfor %}
+</div>
+</div>
+</div>
