@@ -1,0 +1,36 @@
+{% extends 'schema2.html'%}
+                                                        <!--page_name-->
+{% block tile %}
+	bs_grid
+{% endblock %}
+
+<div class="container-fluid">
+                                                        <!--tree_name-->
+{% block tree_name %}
+<div class="row bg-success">
+	<a class="btn btn-outline-dar" href="/bs/" style="text-align=center;">Bootstrap</a>
+</div>
+{% endblock tree_name %}
+                                                        <!--tree_content-->
+{% block tree_content %}
+<div class="row bg-success" style="height:100%;">
+<div>
+<div class="container-fluid p-1 btn-group-vertical" role="group" aria-label="Vertical button group">
+    {% for bs_notes, bs_link in bs_zip %}
+        {% if 'bs02-grid' == bs_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled btn-block"
+               style="font-size: x-small; height: 25px;"> {{ bs_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark btn-block"
+               style="font-size: x-small; height: 25px;" href='/bs/{{ bs_link }}'>{{ bs_notes }}</a>
+        {% endif %}
+    {% endfor %}
+</div>
+</div>
+</div>
+{% endblock tree_content %}
+</div>
+                                                        <!--content-->
+{% block content %}
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'schema2.html'%}
+
+{% block tile %} 
+	jq basic
+{% endblock %}
+
+{% block tree_name %}
+	<a class="active" href="/jq/">JQery</a>
+{% endblock tree_name %}
+
+{% block tree_content %}
+    {% for jq_notes, jq_link in jq_zip %}
+        {% if 'jq-bassic' == jq_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled"
+               style="font-size: x-small; height: 1px;" href='/jq/{{ js_link }}'> {{ jq_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark"
+               style="font-size: x-small; height: 1px;" href='/jq/{{ js_link }}'>{{ jq_notes }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock tree_content %}
+
+{% block content %}
+	
+{% endblock content %}

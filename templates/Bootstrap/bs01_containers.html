@@ -1,0 +1,78 @@
+{% extends 'schema2.html'%}
+                                                        <!--page_name-->
+{% block tile %}
+	bs_containers
+{% endblock %}
+
+                                                        <!--!!!tree!!!-->
+                                                        <!--tree_name-->
+{% block tree_name %}
+    Bootstrap
+{% endblock tree_name %}
+                                                        <!--tree_content-->
+{% block tree_content %}
+    {% include "gn_sidebar.html" with zip=bs_zip name='bs01-containers' %}
+{% endblock tree_content %}
+                                                        <!--!!!end tree!!!-->
+
+
+                                                        <!--!!!content!!!-->
+{% block content %}
+<main>
+<br>
+<!--                                                Def and use-->
+<div class="container-fluid p-2 bg-light">
+<h1>Containers</h1>
+    <p>Containers are used to pad the content inside of them</p>
+</div>
+<br>
+<!--                                                Container Bootstrap classes-->
+<div class="container-fluid p-2 bg-light">
+<h3>Containers class</h3>
+    <div class="container p-2 bg-dark text-white text-center" style="width: 80%">
+        <h5>.container</h5>
+        <p>The .container class provides a responsive fixed width container</p>
+    </div>
+    <br>
+    <div class="container-fluid p-2 bg-dark text-white text-center">
+        <h5>.container-fluid</h5>
+        <p>The .container class provides a responsive fixed width container</p>
+    </div>
+    <br>
+       <div class="container-fluid p-2 bg-dark text-white text-center">
+
+        <p>Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is
+            reached, after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is
+            100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, xl, and xxl.</p>
+
+
+
+    </div>
+
+
+
+</div>
+<br>
+<div class="container-fluid p-2 bg-light">
+    <h3>Responsive containers class</h3>
+    <p>Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is
+    reached, after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is
+    100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, xl, and xxl.</p>
+
+        <div class="container-sm p-2 bg-dark text-white text-center"><h5>.container-sm</h5>
+            100% wide until small breakpoint</div><br>
+        <div class="container-md p-2 bg-dark text-white text-center"><h5>.container-md</h5>
+            100% wide until medium breakpoint</div><br>
+        <div class="container-lg p-2 bg-dark text-white text-center"><h5>.container-lg</h5>
+            100% wide until large breakpoint</div><br>
+        <div class="container-xl p-2 bg-dark text-white text-center"><h5>.container-xl</h5>
+            100% wide until extra large breakpoint</div><br>
+        <div class="container-xxl p-2 bg-dark text-white text-center"><h5>.container-xxl</h5>
+    100% wide until extra extra large breakpoint</div><br>
+</div>
+
+
+</main>
+
+
+{% endblock content %}

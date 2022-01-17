@@ -3,9 +3,9 @@
 {% block site %}
 <div align="center">
     <h2>Index</h2>
-    {% for jq_notes, jq_link in jq_zip %}
+    {% for bs_notes, bs_link in bs_zip %}
         <a type="button" class="w-50 btn btn-outline-success btn-block" role="button"
-           href='/jq/{{ jq_link }}'>{{ jq_notes }}</a>
+           href='/bs/{{ bs_link }}'>{{ bs_notes }}</a>
     {% endfor %}
 </div>
 {% endblock site %}

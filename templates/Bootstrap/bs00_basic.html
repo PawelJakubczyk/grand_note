@@ -1,0 +1,25 @@
+{% extends 'schema2.html'%}
+                                                        <!--page_name-->
+{% block tile %}
+	bs_basic
+{% endblock %}
+                                                        <!--tree_name-->
+{% block tree_name %}
+	<a class="active" href="/bs/">Bootstrap</a>
+{% endblock tree_name %}
+                                                        <!--tree_content-->
+{% block tree_content %}
+    {% for bs_notes, bs_link in bs_zip %}
+        {% if 'bs99-fast-new' == bs_link %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark disabled"
+               style="font-size: x-small; height: 1px;" href='/bs/{{ bs_link }}'> {{ bs_notes }}</a>
+        {% else %}
+            <a type="active" class="list-group-item list-group-item-action list-group-item-dark"
+               style="font-size: x-small; height: 1px;" href='/bs/{{ bs_link }}'>{{ bs_notes }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock tree_content %}
+                                                        <!--content-->
+{% block content %}
+
+{% endblock content %}
